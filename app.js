@@ -44,6 +44,8 @@ const displayData = data => {
     
     country.innerText = data.sys.country;
 
+
+    iconImg.style.display = 'inline-block';
     const icon = data.weather[0].icon;
     console.log(icon);
     const iconurl = `http://openweathermap.org/img/w/${icon}.png`;
